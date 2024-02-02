@@ -17,11 +17,9 @@
     
     <body style='margin : 0px; overflow: hidden;'>
         <a-scene embedded="" vr-mode-ui="enabled: false;" arjs="debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;" inspector="" keyboard-shortcuts="" screenshot="" device-orientation-permission-ui="">
-            <a-assets>
-                <a-asset-item id="vinayaka" src='Vinayagar.gltf' timeout="10000"></a-asset-item>
-            </a-assets>
+           
             <a-marker type="barcode" value="5" material="" arjs-anchor="" arjs-hit-testing="">
-                <a-entity  gltf-model="##vinayaka"></a-entity>
+                <a-box  material="color: yellow;"></a-box>
             </a-marker>
             
             <a-entity camera=""></a-entity>
